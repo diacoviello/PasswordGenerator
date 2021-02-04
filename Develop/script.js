@@ -38,6 +38,14 @@ function generatePassword() {
   }
 
   var nums = confirm("Do you want your password to include numbers?");
+  {
+    if ((nums = true)) {
+      stringChoice = stringChoice + numbers;
+    } else {
+      stringChoice = stringChoice;
+    }
+    return stringChoice;
+  }
 
   var specials = confirm(
     "Do you want your password to include special characters?"
