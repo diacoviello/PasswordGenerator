@@ -1,14 +1,16 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-//k
-
 function generatePassword() {
+  //setting variable strings to be pulled from for PW generation//
   var lowercasechar = "abcdefghijklmnopqrstuvwxyz";
   var uppercasechar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var numbers = "1234567890";
   var specialchar = "!#$%&'()*+,-./:;<=]>?@[^_`{|}~ ";
+  //This is where the string of potential characters will be stores after the user indicates their preferences//
   var stringChoice = "";
+
+  //Prompts in window code begins here//
   var chars = parseInt(
     prompt("How many characters do you wish for your password to be? (8-128)")
   );
@@ -70,8 +72,13 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-}
 
+  if ((writePassword = "")) {
+    alert(
+      "The password must contain at least one type of character to be created."
+    );
+  }
+}
 // Add event listener to generate button
 
 generateBtn.addEventListener("click", writePassword);
