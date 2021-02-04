@@ -19,44 +19,41 @@ function generatePassword() {
 
   var lows = confirm("Do you want your password to include lowercase letters?");
   {
-    if ((lows = true)) {
-      stringChoice = lowercasechar;
+    if (lows == true) {
+      stringChoice = stringChoice + lowercasechar;
     } else {
-      stringChoice = "";
+      stringChoice = stringChoice;
     }
-    return stringChoice;
+    console.log(lows);
   }
 
   var ups = confirm("Do you want your password to include uppercase letters?");
   {
-    if ((ups = true)) {
+    if (ups == true) {
       stringChoice = stringChoice + uppercasechar;
     } else {
       stringChoice = stringChoice;
     }
-    return stringChoice;
   }
 
   var nums = confirm("Do you want your password to include numbers?");
   {
-    if ((nums = true)) {
+    if (nums == true) {
       stringChoice = stringChoice + numbers;
     } else {
       stringChoice = stringChoice;
     }
-    return stringChoice;
   }
 
   var specials = confirm(
     "Do you want your password to include special characters?"
   );
   {
-    if ((specials = true)) {
+    if (specials == true) {
       stringChoice = stringChoice + specialchar;
     } else {
       stringChoice = stringChoice;
     }
-    return stringChoice;
   }
 
   var password = "";
