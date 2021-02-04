@@ -40,7 +40,7 @@ function generatePassword() {
   var nums = confirm("Do you want your password to include numbers?");
 
   var specials = confirm(
-    "DO you want your password to include special characters?"
+    "Do you want your password to include special characters?"
   );
 
   var password = "";
