@@ -50,6 +50,14 @@ function generatePassword() {
   var specials = confirm(
     "Do you want your password to include special characters?"
   );
+  {
+    if ((specials = true)) {
+      stringChoice = stringChoice + specialchar;
+    } else {
+      stringChoice = stringChoice;
+    }
+    return stringChoice;
+  }
 
   var password = "";
   for (var i = 0; i < chars; i++) {
