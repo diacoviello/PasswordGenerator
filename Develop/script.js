@@ -72,12 +72,6 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
-  if ((writePassword = "")) {
-    alert(
-      "The password must contain at least one type of character to be created."
-    );
-  }
 }
 // Add event listener to generate button
 
