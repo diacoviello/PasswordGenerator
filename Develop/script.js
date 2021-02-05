@@ -61,9 +61,6 @@ function generatePassword() {
     console.log(specials);
   }
 
-  if ((lows === false, ups === false, nums === false, specials === false)) {
-    return "Password needs at least one specified character type.";
-  } else {
     var password = "";
     for (var i = 0; i < chars; i++) {
       password += stringChoice[Math.floor(Math.random() * stringChoice.length)];
@@ -83,13 +80,3 @@ function writePassword() {
 // Add event listener to generate button
 
 generateBtn.addEventListener("click", writePassword);
-
-// User input function
-// this contains user input (how many chars lower case upper special numbers) array to hold user input
-
-// write another function to RNADOMIZE user input
-// call above function to run
-
-//k
-
-//k
