@@ -61,14 +61,14 @@ function generatePassword() {
     console.log(specials);
   }
 
-    var password = "";
-    for (var i = 0; i < chars; i++) {
-      password += stringChoice[Math.floor(Math.random() * stringChoice.length)];
-    }
-    console.log(password);
-    return password;
+  var password = "";
+  for (var i = 0; i < chars; i++) {
+    password += stringChoice[Math.floor(Math.random() * stringChoice.length)];
   }
+  console.log(password);
+  return password;
 }
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
